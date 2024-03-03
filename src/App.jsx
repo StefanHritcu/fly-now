@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 
+import Shop from "./components/Shop"
+
+import Header from "./components/Header"
 function App() {
 
 
   return (
     <>
-      <div>
-        <h1>Home Page</h1>
-        <Link to="/shop">Vai allo Shop</Link>
-      </div>
+<Header/>
+
+      <Routes>
+        <Route path="/" element={<App/>} />
+        <Route path="/shop" element={<Shop/>}/>
+      </Routes>
     </>
   )
 }
