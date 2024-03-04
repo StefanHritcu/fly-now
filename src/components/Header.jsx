@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 function Header(){
     return(
         <>
-        <div>
-            <h1>Logo</h1>
-            <div>
-                <Link to="/shop">Shop</Link>
+        <div className="flex justify-between items-center p-10">
+            <h1 className="text-2xl font-semibold">Logo</h1>
+            <div className="flex">
+                <Link className="mx-10" to="/shop">Shop</Link>
                 <br />
-                <Link>About</Link>
+                <Link className="mx-10">About</Link>
                 <br />
-                <Link>Register</Link>
+                <Link className="mx-10">Register</Link>
             </div>
         </div>
         </>
